@@ -1,0 +1,7 @@
+<!-- res/drawable/rectangle_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Set your desired fill color -->
+    <corners android:radius="0dp">
+
+    </corners> <!-- Set corner radius to 0 for a rectangle --><!-- Set your desired height -->
+</shape>

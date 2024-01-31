@@ -1,0 +1,15 @@
+<!-- res/drawable/spinner_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <!-- Border for the spinner -->
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1.75dp"
+            android:color="#9E9E9E" /> <!-- Border color -->
+            
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/security"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Welcome to Sober drive"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_log_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="LogIn or SignUp to continue."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/input_nm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#9E9E9E"
+                android:background="@drawable/while_bg"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:hint="Enter your Name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:inputType="textCapSentences" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_border"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/input_phn_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#9E9E9E"
+                android:background="@drawable/while_bg"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:hint="Enter your Phone Number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        app:cardElevation="25dp"
+        app:cardCornerRadius="25dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_bg_25"
+            android:gravity="center"
+            android:text="Continue"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
